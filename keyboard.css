@@ -1,0 +1,26 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5,50px);
+    gap: 20px;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+}
+
+#container > div {
+    border: 1px solid red; 
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#enter, #shift {
+    grid-column: 11/ span 2;
+}
+
+#space {
+    grid-column: 5/ span 4;
+}
